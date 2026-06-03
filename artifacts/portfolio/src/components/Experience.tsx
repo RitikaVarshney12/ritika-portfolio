@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
-import { PORTFOLIO_DATA } from "../data/portfolioData";
-import { GraduationCap, Briefcase, MapPin, Calendar } from "lucide-react";
+import { GraduationCap, Briefcase, MapPin, Calendar, ExternalLink } from "lucide-react";
 
-const timelineItems = [
+const timeline = [
   {
     type: "education",
     icon: GraduationCap,
@@ -10,20 +9,22 @@ const timelineItems = [
     org: "GLA University",
     period: "2024 – 2028",
     location: "Mathura, Uttar Pradesh",
-    description: "Building a strong foundation in computer science, software engineering, AI/ML, and full-stack web development. Active participant in research and open-source initiatives from the first year itself.",
-    color: "from-violet-500 to-purple-600",
-    glow: "shadow-violet-500/20",
+    description: "Building a rigorous foundation in computer science, algorithms, software engineering, AI/ML, and full-stack web development. Active researcher and open-source contributor since Year 1.",
+    gradient: "from-violet-500 to-purple-700",
+    glow: "shadow-violet-500/25",
+    highlight: true,
   },
   {
     type: "internship",
     icon: Briefcase,
-    role: "Summer School 2026 Intern",
+    role: "Summer School 2026 — Data Science & AI",
     org: "IIT Jammu",
     period: "Summer 2026",
     location: "Jammu, India",
-    description: "Selected for the prestigious Summer School 2026 Internship Program in Data Science & Artificial Intelligence. Exposure to advanced AI concepts, data science methodologies, and research-based learning from IIT faculty.",
-    color: "from-cyan-500 to-blue-500",
+    description: "Selected for the prestigious IIT Jammu Summer School 2026 Internship Program specializing in Data Science and Artificial Intelligence. Exposure to advanced AI concepts, data science methodologies, and research-based learning directly from IIT faculty and researchers.",
+    gradient: "from-cyan-500 to-blue-600",
     glow: "shadow-cyan-500/20",
+    highlight: false,
   },
   {
     type: "internship",
@@ -32,9 +33,10 @@ const timelineItems = [
     org: "IIT Ropar",
     period: "Summer 2025",
     location: "Ropar, Punjab (Remote)",
-    description: "Contributing to open-source software repositories addressing India-centric challenges. Direct code contributions to publicly accessible repositories. Collaborating with research mentors and fellow developers to solve technical bottlenecks and maintain development quality standards.",
-    color: "from-blue-500 to-indigo-500",
+    description: "Contributing to live open-source software repositories at the Vicharanashala Lab for Education Design (VLED Lab), addressing real India-centric educational challenges. Making direct code contributions to publicly accessible repositories, collaborating with research mentors and fellow developers, solving technical bottlenecks, and maintaining quality standards.",
+    gradient: "from-blue-500 to-indigo-600",
     glow: "shadow-blue-500/20",
+    highlight: false,
   },
   {
     type: "internship",
@@ -43,79 +45,85 @@ const timelineItems = [
     org: "Pinnacle Labs",
     period: "2024",
     location: "India",
-    description: "Worked on practical Java development tasks with real software engineering workflows. Gained hands-on experience in application development, object-oriented design principles, and industry-standard practices.",
-    color: "from-emerald-500 to-teal-500",
+    description: "Worked on practical Java development tasks within real software engineering workflows. Gained hands-on experience in object-oriented application development, design patterns, and industry-standard practices.",
+    gradient: "from-emerald-500 to-teal-600",
     glow: "shadow-emerald-500/20",
+    highlight: false,
   },
   {
     type: "internship",
     icon: Briefcase,
-    role: "Intern",
+    role: "Software Intern",
     org: "Astrea IT Services",
     period: "2024",
     location: "India",
-    description: "Participated in industry-oriented software training and professional development programs. Gained exposure to software development workflows, team collaboration, and professional communication in a tech environment.",
-    color: "from-pink-500 to-rose-500",
+    description: "Participated in industry-oriented software training and professional development programs. Gained exposure to software development workflows, team collaboration, and professional communication in a technology-focused environment.",
+    gradient: "from-pink-500 to-rose-600",
     glow: "shadow-pink-500/20",
+    highlight: false,
   },
 ];
 
 export function Experience() {
   return (
-    <section id="experience" className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(37,99,235,0.07),transparent_50%)]" />
+    <section className="relative min-h-[calc(100dvh-4rem)] flex items-center py-28 overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_20%_50%,rgba(37,99,235,0.08),transparent)]" />
 
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-montserrat font-semibold tracking-widest uppercase text-accent mb-3 block">Journey</span>
-          <h2 className="text-4xl md:text-5xl font-poppins font-bold text-white">
+          <span className="text-xs font-montserrat font-semibold tracking-widest uppercase text-cyan-400 mb-3 block">Journey</span>
+          <h1 className="text-4xl md:text-5xl xl:text-6xl font-poppins font-extrabold text-white mb-4">
             Education &amp; <span className="text-gradient">Experience</span>
-          </h2>
+          </h1>
         </motion.div>
 
         <div className="relative max-w-3xl mx-auto">
-          {/* Vertical line */}
-          <div className="absolute left-6 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-primary/60 via-accent/40 to-transparent" />
+          {/* Spine */}
+          <div className="absolute left-7 top-4 bottom-4 w-px bg-gradient-to-b from-violet-500/80 via-cyan-500/40 to-transparent" />
 
-          <div className="flex flex-col gap-8">
-            {timelineItems.map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ delay: i * 0.1, duration: 0.6, ease: "easeOut" }}
-                className="relative flex gap-6 md:gap-8"
-              >
-                {/* Icon dot on line */}
-                <div className="relative flex-shrink-0 z-10">
-                  <div className={`w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg ${item.glow}`}>
-                    <item.icon size={22} className="text-white" />
-                  </div>
-                </div>
-
-                {/* Card */}
-                <div className="flex-1 glass-panel rounded-2xl p-6 hover:border-white/20 transition-all duration-300 group">
-                  <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
-                    <div>
-                      <h3 className="font-poppins font-semibold text-white text-lg leading-tight group-hover:text-gradient transition-all">{item.role}</h3>
-                      <p className="text-primary font-medium text-sm mt-0.5">{item.org}</p>
-                    </div>
-                    <div className="flex flex-col items-end gap-1 text-xs text-muted-foreground">
-                      <span className="flex items-center gap-1"><Calendar size={11} />{item.period}</span>
-                      <span className="flex items-center gap-1"><MapPin size={11} />{item.location}</span>
+          <div className="flex flex-col gap-6">
+            {timeline.map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.1, duration: 0.6, ease: "easeOut" }}
+                  className="relative flex gap-7"
+                >
+                  {/* Timeline icon */}
+                  <div className="relative flex-shrink-0 z-10">
+                    <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${item.gradient} flex items-center justify-center shadow-xl ${item.glow}`}>
+                      <Icon size={22} className="text-white" />
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
-                </div>
-              </motion.div>
-            ))}
+
+                  {/* Card */}
+                  <motion.div
+                    whileHover={{ x: 4 }}
+                    className={`flex-1 glass-panel rounded-2xl p-6 transition-all duration-300 group border-white/[0.07] hover:border-white/18 ${item.highlight ? "border-violet-500/20" : ""}`}
+                  >
+                    <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
+                      <div>
+                        <h3 className="font-poppins font-bold text-white text-base leading-tight mb-1 group-hover:text-gradient transition-all">{item.role}</h3>
+                        <p className={`font-semibold text-sm bg-clip-text text-transparent bg-gradient-to-r ${item.gradient}`}>{item.org}</p>
+                      </div>
+                      <div className="flex flex-col items-end gap-1 text-[11px] text-white/35 font-medium">
+                        <span className="flex items-center gap-1"><Calendar size={10} />{item.period}</span>
+                        <span className="flex items-center gap-1"><MapPin size={10} />{item.location}</span>
+                      </div>
+                    </div>
+                    <p className="text-white/45 text-[13px] leading-relaxed">{item.description}</p>
+                  </motion.div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>

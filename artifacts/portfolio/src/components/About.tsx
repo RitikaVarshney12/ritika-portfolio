@@ -1,85 +1,108 @@
 import { motion } from "framer-motion";
 import { PORTFOLIO_DATA } from "../data/portfolioData";
-import { Code2, Brain, Globe, FlaskConical } from "lucide-react";
+import { Code2, Brain, Globe, FlaskConical, GraduationCap, Star } from "lucide-react";
 
-const pillars = [
-  { icon: Code2, label: "Full-Stack Engineering", color: "from-violet-500 to-purple-600" },
-  { icon: Brain, label: "AI & Machine Learning", color: "from-blue-500 to-cyan-500" },
-  { icon: Globe, label: "Open Source Contributor", color: "from-cyan-500 to-teal-400" },
-  { icon: FlaskConical, label: "Research Enthusiast", color: "from-purple-500 to-pink-500" },
+const stats = [
+  { value: "2", label: "IIT Internships", color: "text-violet-400" },
+  { value: "2+", label: "Projects Built", color: "text-cyan-400" },
+  { value: "2024", label: "Started Coding", color: "text-blue-400" },
+  { value: "∞", label: "Curiosity Level", color: "text-pink-400" },
 ];
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.12, duration: 0.6, ease: "easeOut" },
-  }),
-};
+const pillars = [
+  { icon: Code2, label: "Full-Stack Engineering", desc: "React, Node.js, databases", color: "from-violet-500 to-purple-700" },
+  { icon: Brain, label: "AI & Machine Learning", desc: "Models, data science, CV", color: "from-blue-500 to-cyan-600" },
+  { icon: Globe, label: "Open Source", desc: "IIT Ropar VLED Lab", color: "from-cyan-500 to-teal-500" },
+  { icon: FlaskConical, label: "Research", desc: "IIT Jammu DS & AI", color: "from-pink-500 to-rose-600" },
+];
 
 export function About() {
   return (
-    <section id="about" className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(124,58,237,0.07),transparent_60%)]" />
+    <section className="relative min-h-[calc(100dvh-4rem)] flex items-center py-28 overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_30%_50%,rgba(124,58,237,0.09),transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_40%_at_80%_20%,rgba(6,182,212,0.07),transparent)]" />
 
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-montserrat font-semibold tracking-widest uppercase text-accent mb-3 block">Who I Am</span>
-          <h2 className="text-4xl md:text-5xl font-poppins font-bold text-white">
+          <span className="text-xs font-montserrat font-semibold tracking-widest uppercase text-cyan-400 mb-3 block">Who I Am</span>
+          <h1 className="text-4xl md:text-5xl xl:text-6xl font-poppins font-extrabold text-white mb-4">
             About <span className="text-gradient">Me</span>
-          </h2>
+          </h1>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-14 items-center">
+        {/* Stats row */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, duration: 0.6 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14 max-w-4xl mx-auto"
+        >
+          {stats.map((s) => (
+            <div key={s.label} className="glass-panel rounded-2xl p-5 text-center">
+              <div className={`text-3xl font-poppins font-black mb-1 ${s.color}`}>{s.value}</div>
+              <div className="text-xs text-white/45 font-medium">{s.label}</div>
+            </div>
+          ))}
+        </motion.div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          {/* Bio */}
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.15, duration: 0.7 }}
           >
-            <div className="glass-panel rounded-2xl p-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+            <div className="glass-panel rounded-3xl p-8 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-48 h-48 bg-violet-500/8 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
               <div className="relative z-10">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/15 border border-primary/30 mb-6">
-                  <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                  <span className="text-xs font-montserrat font-semibold tracking-wider text-primary uppercase">B.Tech CSE · GLA University · 2024–2028</span>
+                <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-xl bg-violet-500/10 border border-violet-500/20 mb-6">
+                  <GraduationCap size={15} className="text-violet-400" />
+                  <span className="text-xs font-montserrat font-semibold tracking-wider text-violet-300 uppercase">B.Tech CSE · GLA University · 2024–2028</span>
                 </div>
-                <p className="text-muted-foreground leading-relaxed mb-5 text-[15px]">
-                  I'm a first-year Computer Science Engineering student who jumped straight into research internships at two IITs — driven by a genuine obsession with building things that matter.
+                <p className="text-white/60 leading-relaxed mb-4 text-[15px]">
+                  I'm a first-year Computer Science Engineering student who hit the ground running — securing research internships at <span className="text-violet-300 font-medium">IIT Ropar</span> and <span className="text-cyan-300 font-medium">IIT Jammu</span> before most students have even opened their textbooks.
                 </p>
-                <p className="text-muted-foreground leading-relaxed mb-5 text-[15px]">
-                  My interests span the full spectrum: from architecting scalable web systems with React and Node.js to training machine learning models and contributing to open-source projects addressing real-world challenges in India.
+                <p className="text-white/60 leading-relaxed mb-4 text-[15px]">
+                  My work spans the full stack — from designing React interfaces and building Node.js backends to training ML models and contributing open-source code to solve real India-centric challenges.
                 </p>
-                <p className="text-muted-foreground leading-relaxed text-[15px]">
-                  I believe the best software happens at the intersection of engineering precision and research curiosity. I'm actively seeking opportunities to grow alongside exceptional teams and contribute to impactful products.
+                <p className="text-white/60 leading-relaxed text-[15px]">
+                  I believe the best software happens at the intersection of <span className="text-white/80">engineering precision</span> and <span className="text-white/80">research curiosity</span>. I'm actively seeking opportunities to grow alongside exceptional teams and make a real impact.
                 </p>
+
+                <div className="mt-7 flex flex-wrap gap-2">
+                  {["Problem Solver", "Team Player", "Fast Learner", "Open Source Contributor"].map((tag) => (
+                    <span key={tag} className="px-3 py-1.5 rounded-full text-xs font-medium bg-white/5 border border-white/10 text-white/60">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>
 
+          {/* Pillars grid */}
           <div className="grid grid-cols-2 gap-4">
             {pillars.map((item, i) => (
               <motion.div
                 key={item.label}
-                custom={i}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={fadeUp}
-                whileHover={{ scale: 1.04, y: -4 }}
-                className="glass-panel rounded-xl p-6 flex flex-col items-center text-center gap-3 cursor-default transition-all duration-300 group"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 + i * 0.1, duration: 0.5 }}
+                whileHover={{ y: -5, scale: 1.03 }}
+                className="glass-panel rounded-2xl p-6 flex flex-col gap-3 group cursor-default hover:border-white/20 transition-all duration-300"
               >
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg group-hover:shadow-primary/30`}>
+                <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-lg group-hover:shadow-violet-500/20 transition-shadow`}>
                   <item.icon size={22} className="text-white" />
                 </div>
-                <span className="text-sm font-medium text-white leading-tight">{item.label}</span>
+                <div>
+                  <p className="text-sm font-semibold text-white leading-tight mb-0.5">{item.label}</p>
+                  <p className="text-xs text-white/40">{item.desc}</p>
+                </div>
               </motion.div>
             ))}
           </div>
