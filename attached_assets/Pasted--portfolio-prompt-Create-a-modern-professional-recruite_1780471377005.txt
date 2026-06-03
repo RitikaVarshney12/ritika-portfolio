@@ -1,0 +1,473 @@
+<portfolio_prompt>
+
+Create a modern, professional, recruiter-focused portfolio website for **Ritika Varshney**, a B.Tech Computer Science Engineering undergraduate at GLA University with interests in Full-Stack Development, Artificial Intelligence, Machine Learning, Data Science, Research, and Open-Source Software Development.
+
+The website should be visually impressive, highly responsive, production-ready, and designed to leave a strong impression on recruiters, hiring managers, internship coordinators, and research mentors. The design should combine modern minimalism, dark-mode aesthetics, glassmorphism, smooth animations, and clean typography while maintaining excellent performance and usability.
+
+## Hero Section (Home)
+
+Create a visually stunning hero section featuring a professional profile image.
+
+### Hero Content
+
+**Name:** Ritika Varshney
+
+**Professional Title:**
+Computer Science Engineering Student | Aspiring Software Engineer | AI & Data Science Enthusiast
+
+**Introduction:**
+"As a B.Tech CSE undergraduate at GLA University, I am passionate about building intelligent, scalable web applications. My technical focus bridges full-stack engineering with machine learning, allowing me to take projects from data modeling and backend logic to seamless user experiences. I thrive on problem-solving and continuously seek opportunities to contribute to innovative software and AI-driven products."
+
+### Call-To-Action Buttons
+
+* View Projects
+* Download Resume
+* Contact Me
+
+### Hero Design
+
+* Modern animated background
+* Subtle particle effects
+* Smooth entrance animations
+* Professional profile image frame
+* Social media quick-access icons
+* Resume download button
+
+---
+
+## About Me Section
+
+Create a clean and engaging section introducing Ritika's background, interests, and career aspirations.
+
+### Content
+
+* B.Tech in Computer Science Engineering
+* GLA University
+* Duration: 2024–2028
+* Passionate about software engineering, artificial intelligence, machine learning, data science, and modern web development.
+* Strong interest in research-driven innovation and open-source development.
+* Dedicated to solving real-world problems through technology.
+* Seeking opportunities to apply technical skills, gain industry experience, and contribute to impactful software products.
+
+---
+
+## Education & Experience Section
+
+Use a modern timeline design with animated cards.
+
+### Education
+
+#### Bachelor of Technology (B.Tech)
+
+* Computer Science Engineering
+* GLA University
+* 2024–2028
+
+### Research & Internship Experience
+
+#### Summer School 2026 Internship Program – IIT Jammu
+
+* Selected for the Summer School 2026 Internship Program in Data Science & Artificial Intelligence.
+* Exposure to advanced AI concepts, data science methodologies, and research-based learning.
+
+#### Summer Research Intern – IIT Ropar (VLED Lab)
+
+* Selected for a structured Summer Internship at the Vicharanashala Lab for Education Design (VLED Lab).
+* Contributing remotely to live open-source software repositories addressing real India-centric challenges.
+* Making direct code contributions to publicly accessible repositories.
+* Collaborating with research mentors and fellow developers.
+* Solving technical bottlenecks and maintaining development quality standards.
+
+#### Java Development Intern – Pinnacle Labs
+
+* Worked on practical Java development tasks.
+* Gained exposure to software engineering workflows and application development.
+
+#### Intern – Astrea IT Services
+
+* Participated in industry-oriented software training and professional development programs.
+
+---
+
+## Skills Section
+
+Design a visually attractive skills showcase using animated cards, floating icons, progress indicators, and interactive effects.
+
+### Programming Languages
+
+* Java
+
+### Web Development
+
+* HTML
+* CSS
+* React.js
+* Node.js
+
+### Databases
+
+* MySQL
+* MongoDB
+
+### Artificial Intelligence & Data Science
+
+* Machine Learning
+* Data Science
+
+### Tools & Platforms
+
+* Git
+* GitHub
+* VS Code
+
+### Professional Skills
+
+* Problem Solving
+* Teamwork
+* Leadership
+* Communication
+
+---
+
+## Featured Projects Section
+
+Display projects using premium modern cards with screenshots, technology badges, GitHub links, and project highlights.
+
+### Project 1: Smart Attendance System
+
+#### Description
+
+An automated attendance tracking system developed using computer vision and facial recognition technology. The system processes real-time video feeds to identify individuals and automatically log attendance records into a structured backend database.
+
+#### Technologies
+
+* Python
+* OpenCV
+* Flask / Tkinter
+* SQL / SQLite
+
+#### Highlights
+
+* Real-time facial recognition
+* Automated attendance management
+* Data storage and tracking
+* Team collaboration project
+
+---
+
+### Project 2: Smart Parking System
+
+#### Description
+
+A smart parking management application developed to optimize parking space allocation and monitor vehicle movement efficiently. The system uses object-oriented programming concepts and data structures to manage parking slots dynamically.
+
+#### Technologies
+
+* C++
+* Data Structures
+* Object-Oriented Programming
+* File Handling
+
+#### Highlights
+
+* Dynamic parking allocation
+* Real-time slot tracking
+* Efficient resource management
+* Team-based development
+
+---
+
+## Career Objective Section
+
+Create an elegant statement section.
+
+### Content
+
+"I am actively seeking opportunities to showcase my technical abilities, collaborate on innovative projects, contribute to impactful software solutions, and gain valuable real-world experience in software engineering, artificial intelligence, machine learning, and data science."
+
+---
+
+## Services / Areas of Contribution Section
+
+Instead of freelance services, present areas where Ritika can contribute.
+
+### Areas of Contribution
+
+* Full-Stack Web Development
+* Frontend Development
+* Backend Development
+* Java Application Development
+* Machine Learning Solutions
+* Data Science Projects
+* Research-Oriented Software Development
+* Open Source Contributions
+* Software Engineering Collaboration
+
+---
+
+## Achievements Section
+
+Display as animated achievement cards.
+
+### Highlights
+
+* Summer Research Intern at IIT Ropar
+* Summer School 2026 Internship Program at IIT Jammu
+* Java Development Intern at Pinnacle Labs
+* Open Source Contributor
+* Strong Foundation in AI & Data Science
+* Active Learner in Modern Software Technologies
+
+---
+
+## Contact Section
+
+Create a professional glassmorphism-style contact page.
+
+### Contact Information
+
+Email: [varshneyritika01@gmail.com](mailto:varshneyritika01@gmail.com)
+
+Phone: +91 8171820594
+
+Location: Uttar Pradesh, India
+
+LinkedIn:
+[www.linkedin.com/in/ritikavarshney1210](http://www.linkedin.com/in/ritikavarshney1210)
+
+GitHub:
+https://github.com/RitikaVarshney12
+
+Resume:
+https://drive.google.com/file/d/1iszaZ0UYHC9vhnYOm3nWPUMLOo3WlmuA/view
+
+### Contact Features
+
+* Functional contact form
+* Social media icons
+* Resume download button
+* Copy-to-clipboard contact actions
+* Form validation
+* Success and error states
+
+---
+
+## Design Requirements
+
+### Visual Style
+
+* Dark mode as default
+* Clean and modern UI
+* Minimalistic design language
+* Glassmorphism effects
+* Futuristic AI-inspired aesthetics
+* Elegant spacing and typography
+* Professional yet student-friendly appearance
+
+### Colors
+
+* Dark charcoal background
+* Purple-blue gradients
+* Cyan accent highlights
+* White typography
+* Soft glowing elements
+
+### Typography
+
+Use:
+
+* Inter
+* Poppins
+* Montserrat
+
+### Animations
+
+* Framer Motion animations
+* Scroll-triggered reveals
+* Hover effects
+* Smooth transitions
+* Animated counters
+* Floating background effects
+
+---
+
+## Additional Website Features
+
+* Sticky navigation bar
+* Smooth scrolling
+* Scroll-to-top button
+* Dynamic project showcase
+* Resume download
+* GitHub integration
+* LinkedIn integration
+* Mobile navigation menu
+* Animated skill cards
+* Professional footer
+* SEO-friendly pages
+
+---
+
+# Deployment & Technical Requirements (Vercel Ready)
+
+Build this portfolio as a production-ready web application deployable directly on Vercel.
+
+## Technology Stack
+
+Use:
+
+* Next.js 15+ (App Router)
+* React 19+
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* Lucide React Icons
+* shadcn/ui components
+
+## Architecture
+
+Follow a professional folder structure:
+
+app/
+components/
+data/
+lib/
+hooks/
+public/
+styles/
+
+Use reusable modular components.
+
+Generate content dynamically from structured data files whenever possible.
+
+---
+
+## Vercel Compatibility Requirements
+
+The project must:
+
+* Deploy successfully on Vercel without modifications.
+* Require no custom server.
+* Use serverless-compatible functionality only.
+* Avoid unsupported Node APIs.
+* Support GitHub → Vercel direct deployment.
+* Produce zero build errors.
+* Produce zero TypeScript errors.
+* Produce zero deployment warnings.
+
+---
+
+## Performance Requirements
+
+Target Lighthouse Scores:
+
+* Performance: 90+
+* Accessibility: 95+
+* Best Practices: 95+
+* SEO: 95+
+
+Implement:
+
+* Image optimization using Next.js Image
+* Lazy loading
+* Dynamic imports where appropriate
+* Optimized bundle sizes
+* Fast page rendering
+
+---
+
+## SEO Requirements
+
+Implement:
+
+* Metadata API
+* Open Graph tags
+* Twitter Cards
+* robots.txt
+* sitemap.xml
+* Structured Data (JSON-LD)
+* Semantic HTML
+* Proper heading hierarchy
+
+---
+
+## Accessibility Requirements
+
+Ensure:
+
+* WCAG compliance
+* Keyboard navigation support
+* ARIA labels
+* Semantic HTML
+* High contrast readability
+* Screen-reader compatibility
+
+---
+
+## Contact Form Requirements
+
+Implement using:
+
+* EmailJS
+
+OR
+
+* Formspree
+
+The form must:
+
+* Work on Vercel
+* Require no backend server
+* Include validation
+* Display success messages
+* Display error handling
+
+---
+
+## Mobile Responsiveness
+
+Fully responsive across:
+
+* Mobile
+* Tablet
+* Laptop
+* Desktop
+* Ultra-wide screens
+
+Ensure layouts adapt perfectly.
+
+---
+
+## Code Quality Requirements
+
+* Clean code
+* Type-safe TypeScript
+* Reusable components
+* Scalable architecture
+* Maintainable project structure
+* Well-commented code where necessary
+
+---
+
+## Deliverables
+
+Generate:
+
+* Complete source code
+* Fully functional UI
+* README.md
+* Deployment instructions
+* SEO configuration
+* Responsive layouts
+* Production-ready build
+
+Commands must work without modifications:
+
+npm install
+
+npm run build
+
+npm run start
+
+The final website should feel comparable to premium developer portfolios, showcase Ritika Varshney as a promising Software Engineer, Research Intern, AI Enthusiast, and Open-Source Contributor, and be fully deployable on Vercel directly from a GitHub repository.
+
+</portfolio_prompt>
