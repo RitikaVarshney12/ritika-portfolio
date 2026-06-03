@@ -11,10 +11,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(124,58,237,0.15),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(6,182,212,0.15),transparent_50%)]"></div>
       </div>
-      
       {/* Mesh/Particles Placeholder via CSS */}
       <div className="absolute inset-0 z-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=')] bg-repeat"></div>
-
       <div className="container relative z-10 mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -32,7 +30,7 @@ export function Hero() {
           </motion.div>
 
           <h1 className="text-5xl md:text-7xl font-poppins font-bold text-white leading-tight mb-6">
-            Hi, I'm <span className="text-gradient">Ritika</span>
+            Hi, I'm <span className="text-gradient">Ritika Varshney</span>
           </h1>
           
           <h2 className="text-xl md:text-2xl font-medium text-muted-foreground mb-6">
