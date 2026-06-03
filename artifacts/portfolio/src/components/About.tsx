@@ -52,7 +52,7 @@ export function About() {
                   <span className="text-xs font-montserrat font-semibold tracking-wider text-violet-300 uppercase">B.Tech CSE · GLA University · 2024–2028</span>
                 </div>
                 <p className="text-white/60 leading-relaxed mb-4 text-[15px]">
-                  I'm a first-year Computer Science Engineering student who hit the ground running — securing research internships at <span className="text-violet-300 font-medium">IIT Ropar</span> and <span className="text-cyan-300 font-medium">IIT Jammu</span> before most students have even opened their textbooks.
+                  I'm a third-year Computer Science Engineering student who hit the ground running — securing research internships at <span className="text-violet-300 font-medium">IIT Ropar</span> and <span className="text-cyan-300 font-medium">IIT Jammu</span> before most students have even opened their textbooks.
                 </p>
                 <p className="text-white/60 leading-relaxed mb-4 text-[15px]">
                   My work spans the full stack — from designing React interfaces and building Node.js backends to training ML models and contributing open-source code to solve real India-centric challenges.
