@@ -20,7 +20,7 @@ const techLogos: Record<string,string> = {
 
 export function Skills() {
   return (
-    <section id="skills" className="relative py-28 overflow-hidden">
+    <section id="skills" className="relative py-16 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_80%_50%,rgba(6,182,212,0.08),transparent)]" />
 
       <div className="container mx-auto px-6 md:px-12">

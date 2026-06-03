@@ -56,7 +56,7 @@ const timeline = [
 
 export function Experience() {
   return (
-    <section id="experience" className="relative py-28 overflow-hidden">
+    <section id="experience" className="relative py-16 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_20%_50%,rgba(37,99,235,0.08),transparent)]" />
 
       <div className="container mx-auto px-6 md:px-12">

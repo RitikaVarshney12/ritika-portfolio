@@ -11,8 +11,8 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 
 function SectionDivider() {
   return (
-    <div className="w-full flex justify-center py-2">
-      <div className="w-px h-16 bg-gradient-to-b from-transparent via-violet-500/25 to-transparent" />
+    <div className="w-full flex justify-center">
+      <div className="w-px h-8 bg-gradient-to-b from-transparent via-violet-500/20 to-transparent" />
     </div>
   );
 }

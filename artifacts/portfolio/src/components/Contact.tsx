@@ -58,7 +58,7 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="relative py-28 overflow-hidden">
+    <section id="contact" className="relative py-16 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_100%,rgba(124,58,237,0.12),transparent)]" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-40 bg-gradient-to-b from-violet-500/0 via-violet-500/40 to-violet-500/0" />
 

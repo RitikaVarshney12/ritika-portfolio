@@ -9,7 +9,7 @@ const contribColors     = ["from-violet-500 to-purple-600","from-blue-500 to-ind
 
 export function Achievements() {
   return (
-    <section id="achievements" className="relative py-28 overflow-hidden">
+    <section id="achievements" className="relative py-16 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_60%_40%,rgba(6,182,212,0.07),transparent)]" />
 
       <div className="container mx-auto px-6 md:px-12">

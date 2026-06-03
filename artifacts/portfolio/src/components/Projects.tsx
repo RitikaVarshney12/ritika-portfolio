@@ -285,8 +285,9 @@ function MiniParticles() {
 
 export function Projects() {
   return (
-    <section className="relative min-h-[calc(100dvh-4rem)] py-28 overflow-hidden">
+    <section id="projects" className="relative py-16 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_30%,rgba(124,58,237,0.09),transparent)]" />
+
 
       <div className="container mx-auto px-6 md:px-12">
         {/* Header */}

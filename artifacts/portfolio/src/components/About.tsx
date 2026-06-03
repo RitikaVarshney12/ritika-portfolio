@@ -17,7 +17,7 @@ const pillars = [
 
 export function About() {
   return (
-    <section id="about" className="relative py-28 overflow-hidden">
+    <section id="about" className="relative py-16 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_30%_50%,rgba(124,58,237,0.09),transparent)]" />
 
       <div className="container mx-auto px-6 md:px-12">
