@@ -1,0 +1,134 @@
+Redesign the website navigation and page flow to behave like a modern portfolio instead of a dashboard.
+
+### Current Problem
+
+The website currently contains a "Navigate the Sections" area with clickable cards (About, Experience, Skills, Projects, Achievements, Contact). This creates an app/dashboard experience and interrupts the natural portfolio flow.
+
+### Required Changes
+
+#### Remove Section Navigation Grid
+
+Delete the entire "Navigate the Sections" section and its cards.
+
+Remove:
+
+* About Me card
+* Experience card
+* Skills card
+* Projects card
+* Achievements card
+* Contact card
+
+The portfolio should not require users to click cards to access content.
+
+---
+
+### Create Continuous Scroll Experience
+
+Structure the website as one smooth scrolling page:
+
+1. Hero Section
+2. About Me
+3. Experience & Education
+4. Skills
+5. Featured Projects
+6. Achievements
+7. Contact
+8. Footer
+
+Users should simply scroll down to view all content.
+
+---
+
+### Smooth Navigation
+
+Keep the top navbar.
+
+When users click:
+
+* Home
+* About
+* Experience
+* Skills
+* Projects
+* Achievements
+* Contact
+
+The page should smoothly scroll to the corresponding section using anchor navigation.
+
+Implement:
+
+* smooth scrolling behavior
+* active section highlighting
+* scroll spy functionality
+* animated section transitions
+
+Example:
+Clicking "Projects" smoothly scrolls to the Projects section.
+
+---
+
+### Section Layout Improvements
+
+Increase spacing between sections.
+
+Each section should feel like its own page while remaining part of a continuous scrolling experience.
+
+Add:
+
+* subtle divider gradients
+* section reveal animations
+* fade-in on scroll
+* Framer Motion transitions
+
+---
+
+### User Experience
+
+The website should feel similar to premium developer portfolios:
+
+* Brittany Chiang
+* Lee Robinson
+* Bruno Simon (without excessive complexity)
+* Modern SaaS landing pages
+
+Users should naturally discover content by scrolling.
+
+No section should require clicking a card to access.
+
+---
+
+### Footer Improvements
+
+Move navigation links into the footer.
+
+Include:
+
+* About
+* Experience
+* Skills
+* Projects
+* Contact
+
+along with:
+
+* GitHub
+* LinkedIn
+* Email
+
+---
+
+### Technical Requirements
+
+Use:
+scroll-behavior: smooth;
+
+Implement:
+
+* Intersection Observer for active navigation states
+* Sticky navbar
+* Smooth anchor scrolling
+* Framer Motion section animations
+* Mobile-friendly navigation
+
+The final experience should feel like a premium single-page portfolio where users can either scroll naturally through the content or jump to sections using the navbar.

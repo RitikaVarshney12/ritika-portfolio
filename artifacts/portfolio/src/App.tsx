@@ -1,42 +1,43 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
-import { Layout } from "@/components/Layout";
-import HomePage from "@/pages/HomePage";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
 import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { Achievements } from "@/components/Achievements";
 import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
-function NotFound() {
+function SectionDivider() {
   return (
-    <div className="min-h-[80vh] flex items-center justify-center text-center px-6">
-      <div>
-        <p className="text-6xl font-poppins font-black text-gradient mb-4">404</p>
-        <p className="text-white/50 mb-6">This page doesn't exist.</p>
-        <a href="/" className="px-6 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-blue-600 text-white text-sm font-semibold">
-          Go Home
-        </a>
-      </div>
+    <div className="w-full flex justify-center py-2">
+      <div className="w-px h-16 bg-gradient-to-b from-transparent via-violet-500/25 to-transparent" />
     </div>
   );
 }
 
 export default function App() {
   return (
-    <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-      <Layout>
-        <Switch>
-          <Route path="/" component={HomePage} />
-          <Route path="/about" component={About} />
-          <Route path="/experience" component={Experience} />
-          <Route path="/skills" component={Skills} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/achievements" component={Achievements} />
-          <Route path="/contact" component={Contact} />
-          <Route component={NotFound} />
-        </Switch>
-      </Layout>
-    </WouterRouter>
+    <div className="min-h-screen bg-[#08080d] text-foreground">
+      <Navbar />
+      <main>
+        <Hero />
+        <SectionDivider />
+        <About />
+        <SectionDivider />
+        <Experience />
+        <SectionDivider />
+        <Skills />
+        <SectionDivider />
+        <Projects />
+        <SectionDivider />
+        <Achievements />
+        <SectionDivider />
+        <Contact />
+      </main>
+      <Footer />
+      <ScrollToTop />
+    </div>
   );
 }
