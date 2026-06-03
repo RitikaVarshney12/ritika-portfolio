@@ -88,7 +88,7 @@ export function Hero() {
           >
             Hi, I'm{" "}
             <span className="relative">
-              <span className="text-gradient">Ritika Varshney</span>
+              <span className="text-gradient text-[58px]">Ritika Varshney</span>
               <motion.span
                 className="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-violet-500 to-cyan-400 rounded-full"
                 initial={{ width: 0 }}
