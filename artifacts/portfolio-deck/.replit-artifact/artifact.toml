@@ -1,0 +1,31 @@
+kind = "slides"
+previewPath = "/portfolio-deck/"
+title = "Ritika Varshney – Portfolio Deck"
+version = "1.0.0"
+id = "artifacts/portfolio-deck"
+router = "path"
+
+[[integratedSkills]]
+name = "slides"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/portfolio-deck/" ]
+localPort = 18741
+
+[services.development]
+run = "pnpm --filter @workspace/portfolio-deck run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/portfolio-deck", "run", "build" ]
+publicDir = "artifacts/portfolio-deck/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18741"
+BASE_PATH = "/portfolio-deck/"
