@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Code2, Brain, Globe, FlaskConical, GraduationCap } from "lucide-react";
 
 const stats = [
-  { value: "2", label: "IIT Internships",  color: "text-violet-400" },
+  { value: "2+", label: "IIT Internships",  color: "text-violet-400" },
   { value: "2+", label: "Projects Built",  color: "text-cyan-400"   },
   { value: "2024", label: "Started Coding", color: "text-blue-400"  },
   { value: "∞",   label: "Curiosity Level", color: "text-pink-400"  },
