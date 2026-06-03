@@ -1,6 +1,6 @@
 import { Switch, Route, Router as WouterRouter } from "wouter";
 import { Layout } from "@/components/Layout";
-import { Hero } from "@/components/Hero";
+import HomePage from "@/pages/HomePage";
 import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
 import { Skills } from "@/components/Skills";
@@ -27,7 +27,7 @@ export default function App() {
     <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
       <Layout>
         <Switch>
-          <Route path="/" component={Hero} />
+          <Route path="/" component={HomePage} />
           <Route path="/about" component={About} />
           <Route path="/experience" component={Experience} />
           <Route path="/skills" component={Skills} />
