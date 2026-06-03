@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "id": "slide-1-title",
+    "position": 1,
+    "filepath": "src/pages/slides/Slide1Title.tsx",
+    "title": "Title — Ritika Varshney",
+    "description": "Opening title slide with name, role, and university details.",
+    "speakerNotes": "Welcome. I'm Ritika Varshney, a B.Tech CSE student at GLA University passionate about building software that matters."
+  },
+  {
+    "id": "slide-2-about",
+    "position": 2,
+    "filepath": "src/pages/slides/Slide2About.tsx",
+    "title": "About Me",
+    "description": "Bio, stat cards showing 2+ IIT internships and projects, and university info.",
+    "speakerNotes": "I completed research internships at two IITs before finishing my first year — I bridge engineering precision with research curiosity."
+  },
+  {
+    "id": "slide-3-research",
+    "position": 3,
+    "filepath": "src/pages/slides/Slide3Research.tsx",
+    "title": "Research Internships",
+    "description": "Two-card layout: IIT Ropar (VLED Lab) and IIT Jammu (Data Science & AI Summer School).",
+    "speakerNotes": "At IIT Ropar I contributed to open-source educational software. At IIT Jammu I joined their Data Science & AI summer school."
+  },
+  {
+    "id": "slide-4-industry",
+    "position": 4,
+    "filepath": "src/pages/slides/Slide4Industry.tsx",
+    "title": "Industry Experience",
+    "description": "Two-card layout: Pinnacle Labs (Java intern) and Astrea IT Services (Software intern).",
+    "speakerNotes": "I've also worked in industry — Java development at Pinnacle Labs and software engineering at Astrea IT Services."
+  },
+  {
+    "id": "slide-5-attendance",
+    "position": 5,
+    "filepath": "src/pages/slides/Slide5Attendance.tsx",
+    "title": "Project: Smart Attendance System",
+    "description": "Computer vision project — face recognition attendance with Python, OpenCV, Flask, SQLite.",
+    "speakerNotes": "This project uses facial recognition to automate attendance tracking with 97%+ accuracy, replacing manual roll-calls."
+  },
+  {
+    "id": "slide-6-parking",
+    "position": 6,
+    "filepath": "src/pages/slides/Slide6Parking.tsx",
+    "title": "Project: Smart Parking System",
+    "description": "C++ OOP project — dynamic slot allocation and real-time parking occupancy tracking.",
+    "speakerNotes": "The parking system applies data structures and OOP in C++ to efficiently allocate and track parking slots in real time."
+  },
+  {
+    "id": "slide-7-skills",
+    "position": 7,
+    "filepath": "src/pages/slides/Slide7Skills.tsx",
+    "title": "Technical Skills",
+    "description": "Six-card grid: Languages, Web, Databases, AI & Data, Tools, Professional skills.",
+    "speakerNotes": "My core stack is Java, C++, and Python with web skills in React/Node, databases, and a growing focus on ML and computer vision."
+  },
+  {
+    "id": "slide-8-connect",
+    "position": 8,
+    "filepath": "src/pages/slides/Slide8Connect.tsx",
+    "title": "Let's Connect",
+    "description": "Closing slide with email, GitHub, and LinkedIn contact details. Open to opportunities.",
+    "speakerNotes": "I'm open to internships and research collaborations. Reach out at varshneyritika01@gmail.com or LinkedIn."
+  }
+]
